@@ -23,6 +23,8 @@ namespace FruityMatch
         {
             Graphics g = e.Graphics;
             g.DrawImageUnscaled(playButton, 0, 0);
+            g.DrawImageUnscaled(playButton, 100, 100);
         }
+
     }
 }
