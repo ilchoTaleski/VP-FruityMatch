@@ -1,0 +1,10 @@
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\bin\Debug\FruityMatch.exe.config
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\bin\Debug\FruityMatch.exe
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\bin\Debug\FruityMatch.pdb
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.csprojAssemblyReference.cache
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.Form1.resources
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.Properties.Resources.resources
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.csproj.GenerateResource.cache
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.csproj.CoreCompileInputs.cache
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.exe
+C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.pdb
