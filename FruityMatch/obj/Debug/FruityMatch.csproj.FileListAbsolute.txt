@@ -8,3 +8,12 @@ C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.csproj.G
 C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.csproj.CoreCompileInputs.cache
 C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.exe
 C:\Users\Ace\source\repos\FruityMatch\FruityMatch\obj\Debug\FruityMatch.pdb
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\bin\Debug\FruityMatch.exe.config
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\bin\Debug\FruityMatch.exe
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\bin\Debug\FruityMatch.pdb
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.Form1.resources
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.Properties.Resources.resources
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.exe
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.pdb
