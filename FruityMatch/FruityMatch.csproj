@@ -51,6 +51,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fruit.cs" />
+    <Compile Include="Orange.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -85,6 +87,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\play.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obv1J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PtYf4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange-PNG-Image-41142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rustic-pine-table.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
