@@ -17,7 +17,7 @@ namespace FruityMatch
         { 
             this.Width = width;
             this.Height = height;
-            position = new Point(x, y);
+            this.position = new Point(x, y);
         }
 
 
