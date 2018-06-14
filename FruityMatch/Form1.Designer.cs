@@ -34,12 +34,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientSize = new System.Drawing.Size(1218, 674);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "dd";
-//            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
 
         }

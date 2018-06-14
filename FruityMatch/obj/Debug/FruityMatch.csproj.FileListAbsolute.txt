@@ -17,3 +17,4 @@ C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch
 C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.exe
 C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.pdb
+C:\Users\User\Desktop\Proekt VP\VP-FruityMatch\FruityMatch\obj\Debug\FruityMatch.csprojResolveAssemblyReference.cache

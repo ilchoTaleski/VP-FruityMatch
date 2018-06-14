@@ -15,16 +15,34 @@ namespace FruityMatch
         Image playButton;
         public Form1()
         {
-            InitializeComponent();
-            playButton = Properties.Resources.play;
+             InitializeComponent();            
+            this.Width = 1280;
+            this.Height = 720;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+           
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            Graphics g = e.Graphics;
-            g.DrawImageUnscaled(playButton, 0, 0);
-            g.DrawImageUnscaled(playButton, 100, 100);
+            
+           
         }
 
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

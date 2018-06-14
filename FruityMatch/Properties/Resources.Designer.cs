@@ -63,9 +63,39 @@ namespace FruityMatch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap play {
+        internal static System.Drawing.Bitmap Orange_PNG_Image_41142 {
             get {
-                object obj = ResourceManager.GetObject("play", resourceCulture);
+                object obj = ResourceManager.GetObject("Orange_PNG_Image_41142", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plate {
+            get {
+                object obj = ResourceManager.GetObject("plate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap table {
+            get {
+                object obj = ResourceManager.GetObject("table", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tumb1 {
+            get {
+                object obj = ResourceManager.GetObject("tumb1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
