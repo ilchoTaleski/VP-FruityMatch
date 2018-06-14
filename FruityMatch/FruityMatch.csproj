@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Avocado.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +53,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Fruit.cs" />
+    <Compile Include="Lemon.cs" />
     <Compile Include="Orange.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,6 +113,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rustic-pine-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delicious-assortment-fresh-fruit-laid-out-border-white-rustic-background-top-view-superfoods-health-detox-die-73554683.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FruityMatch-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FruityMatch-play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20028593001_front_a01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\585ea3a0cb11b227491c3517.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
