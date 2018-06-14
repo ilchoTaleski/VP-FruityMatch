@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Apple.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +54,8 @@
     </Compile>
     <Compile Include="Fruit.cs" />
     <Compile Include="Orange.cs" />
+    <Compile Include="Peach.cs" />
+    <Compile Include="Plum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -111,6 +114,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rustic-pine-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FruityMatch-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FruityMatch-play.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plum.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
