@@ -20,7 +20,10 @@ namespace FruityMatch
            // this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            //  Orange orange = new Orange(75, 75, 30, 30);
+           Orange orange = new Orange(75, 75, 30, 30);
+            
+           
+        }
 
             this.BackgroundImage = Properties.Resources.background_resized;
             this.Width = this.BackgroundImage.Width;
