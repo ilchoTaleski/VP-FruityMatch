@@ -35,6 +35,11 @@ namespace FruityMatch
             watermelonCollection = new WatermelonCollection(rec2);
             this.DoubleBuffered = true;
             
+            this.BackgroundImage = Properties.Resources.background_resized;
+            this.Width = this.BackgroundImage.Width;
+            this.Height = this.BackgroundImage.Height;
+            orange = new Orange(35, 35, 100, 100);
+
         }
 
        
@@ -92,6 +97,7 @@ namespace FruityMatch
 
             selectedFruit = null;
             Invalidate(true);
+            orange.Draw(e.Graphics);
         }
     }
 }
