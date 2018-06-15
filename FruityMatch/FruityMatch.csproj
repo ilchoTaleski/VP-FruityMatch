@@ -54,6 +54,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Fruit.cs" />
+    <Compile Include="FruitCollection.cs" />
     <Compile Include="Lemon.cs" />
     <Compile Include="Orange.cs" />
     <Compile Include="Peach.cs" />
@@ -195,8 +196,6 @@
     <None Include="Resources\Webp.net-resizeimage %281%29.jpg" />
     <None Include="Resources\FruityMatch-3.jpg" />
   </ItemGroup>
-  
-  
   <ItemGroup>
     <None Include="Resources\apple.png" />
   </ItemGroup>
