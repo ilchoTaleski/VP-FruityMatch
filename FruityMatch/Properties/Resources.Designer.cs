@@ -63,9 +63,6 @@ namespace FruityMatch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-<<<<<<< HEAD
-        internal static System.Drawing.Bitmap avocado {
-=======
         internal static System.Drawing.Bitmap apple {
             get {
                 object obj = ResourceManager.GetObject("apple", resourceCulture);
@@ -76,28 +73,7 @@ namespace FruityMatch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FruityMatch_3 {
-            get {
-                object obj = ResourceManager.GetObject("FruityMatch_3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FruityMatch_play {
-            get {
-                object obj = ResourceManager.GetObject("FruityMatch_play", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Orange_PNG_Image_41142 {
->>>>>>> db1866e9d282d6fd76f6e1c0a983eb646ce7143a
+        internal static System.Drawing.Bitmap avocado {
             get {
                 object obj = ResourceManager.GetObject("avocado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -120,6 +96,16 @@ namespace FruityMatch.Properties {
         internal static System.Drawing.Bitmap background_resized {
             get {
                 object obj = ResourceManager.GetObject("background_resized", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FruityMatch_3 {
+            get {
+                object obj = ResourceManager.GetObject("FruityMatch_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -177,8 +163,6 @@ namespace FruityMatch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-<<<<<<< HEAD
-=======
         internal static System.Drawing.Bitmap plum {
             get {
                 object obj = ResourceManager.GetObject("plum", resourceCulture);
@@ -189,7 +173,6 @@ namespace FruityMatch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
->>>>>>> db1866e9d282d6fd76f6e1c0a983eb646ce7143a
         internal static System.Drawing.Bitmap salfetki_00 {
             get {
                 object obj = ResourceManager.GetObject("salfetki_00", resourceCulture);
