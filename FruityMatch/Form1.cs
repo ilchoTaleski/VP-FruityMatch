@@ -15,23 +15,19 @@ namespace FruityMatch
         Orange orange;
         public Form1()
         {
-                        
-           
-           // this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            InitializeComponent();
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-           Orange orange = new Orange(75, 75, 30, 30);
-            
-           
-        }
-
             this.BackgroundImage = Properties.Resources.background_resized;
             this.Width = this.BackgroundImage.Width;
             this.Height = this.BackgroundImage.Height;
-            orange = new Orange(150, 150, 100, 100);
-            
+            orange = new Orange(35, 35, 100, 100);
 
-            InitializeComponent();
+
+            
+           
         }
 
        
@@ -54,7 +50,6 @@ namespace FruityMatch
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             orange.Draw(e.Graphics);
-            MessageBox.Show("da");
         }
     }
 }
