@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace FruityMatch
 {
-    public class Avocado:Fruit
+    public class Watermelon:Fruit
     {
-        public Image avocadoPicture { get; set; }
-        public Avocado(int width, int height, int x, int y) :
+        public Image watermelonPicture { get; set; }
+        public Watermelon(int width, int height, int x, int y) :
             base(width, height, x, y)
         {
-            avocadoPicture = Properties.Resources.avocado;
+            watermelonPicture = Properties.Resources.watermelon;
         }
         override
         public void Draw(Graphics g)
         {
-            g.DrawImage(avocadoPicture, this.position.X, this.position.Y,
+            g.DrawImage(watermelonPicture, this.position.X, this.position.Y,
                 this.Width, this.Height);
         }
     }

@@ -21,7 +21,7 @@ namespace FruityMatch
         override
         public void Draw(Graphics g)
         {
-            g.DrawImage(orangePicture, this.position.X, this.position.Y,
+            g.DrawImage(orangePicture, this.position.X - Width/2, this.position.Y - Height/2,
                 this.Width, this.Height);
            
         }

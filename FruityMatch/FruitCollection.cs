@@ -9,16 +9,35 @@ namespace FruityMatch
 {
     public abstract class FruitCollection
     {
-        public List<Fruit> fruits { get; set; }
+        public LinkedList<Fruit> fruits { get; set; }
         public Rectangle rectangle { get; set; }
         public FruitCollection (Rectangle rectangle)
         {
-            fruits = new List<Fruit>();
+            fruits = new LinkedList<Fruit>();
+            
             this.rectangle = rectangle;
         }
         public abstract void InitializeFruits();
-        public abstract void Draw(Graphics g);
-        public abstract Fruit fruitIfHit(int x, int y);
+        public void Draw(Graphics g)
+        {
+            foreach (Fruit fruit in fruits)
+            {
+                fruit.Draw(g);
+            }
+        }
+        public Fruit fruitIfHit(int x, int y)
+        {
+            for (int i = fruits.Count - 1; i >= 0; i--)
+            {
+                if (fruits.ElementAt(i).isHit(x, y))
+                {
+                    return fruits.ElementAt(i);
+                }
+            }
+            return null;
+        }
+
+        public abstract void AddFruitFirst();
 
     }
 }

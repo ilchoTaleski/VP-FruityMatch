@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FruityMatch
 {
@@ -20,8 +21,6 @@ namespace FruityMatch
             this.position = new Point(x, y);
         }
 
-
-
         public abstract void Draw(Graphics g);
 
         public void MoveTo(int x, int y)
@@ -32,7 +31,8 @@ namespace FruityMatch
         {
             double distance = Math.Sqrt((position.X - x) * (position.X - x)
                 + (position.Y - y) * (position.Y - y));
-            return (Width / 2) <= distance;
+            //MessageBox.Show(Width.ToString());
+            return distance <= (Width/2);
         }
 
     }
