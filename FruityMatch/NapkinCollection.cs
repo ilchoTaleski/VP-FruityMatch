@@ -9,25 +9,34 @@ namespace FruityMatch
 {
     public class NapkinCollection
     {
-        List<Napkin> napkins { get; set; }
-        public NapkinCollection()
+        public List<Napkin> napkins { get; set; }
+        public int activeRow { get; set; }
+        public int playerID { get; set; }
+        public NapkinCollection(int playerID)
         {
             napkins = new List<Napkin>();
+            this.activeRow = 0;
+            this.playerID = playerID;
             InitializeNapkins();
         }
         public void InitializeNapkins()
         {
-            int x = 420;
-            int y = 170;
-            int difference = 58;
-            int player = 0;
+            int x = 440;
+            int y = 215;
+            int difference = 47;
+            if (playerID == 0)
+            {
+                x = 440;
+
+            }
+            else
+            {
+                x = 540;
+
+            }
             for (int i = 0; i<10; i++)
             {
-                if (i == 10)
-                {
-                    player = 1;
-                }
-                Napkin napkin = new Napkin(player, i + 1, "00", x, y + difference * i, 60, 60);
+                Napkin napkin = new Napkin(i, "00", x, y + difference * (i % 10), 50, 50);
                 napkins.Add(napkin);
             }
         }
@@ -38,6 +47,14 @@ namespace FruityMatch
             {
                 n.Draw(g);
             }
+        }
+        public Napkin getNapkinCollision(int x, int y, int activeRow)
+        {
+            foreach(Napkin n in napkins)
+            {
+                if (activeRow == n.Row) return n;
+            }
+            return null;
         }
     }
 }

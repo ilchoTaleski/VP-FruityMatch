@@ -45,8 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Avocado.cs" />
+    <Compile Include="AppleCollection.cs" />
+    <Compile Include="ChoosingCombinations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoosingCombinations.Designer.cs">
+      <DependentUpon>ChoosingCombinations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="LemonCollection.cs" />
+    <Compile Include="LittlePlate.cs" />
+    <Compile Include="LittlePlates.cs" />
+    <Compile Include="PeachCollection.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlumCollection.cs" />
+    <Compile Include="Watermelon.cs" />
     <Compile Include="Apple.cs" />
+    <Compile Include="FruitsDocument.cs" />
     <Compile Include="WatermelonCollection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -65,6 +80,9 @@
     <Compile Include="Plum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChoosingCombinations.resx">
+      <DependentUpon>ChoosingCombinations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +281,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lemon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interface.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salfetki-match.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plate-combination.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,7 +9,6 @@ namespace FruityMatch
 {
     public class Napkin
     {
-        public int Player { get; set; }
         public int Row { get; set; }
         public Image napkin { get; set; }
         public Point position { get; set; }
@@ -30,12 +29,12 @@ namespace FruityMatch
             {"22", Properties.Resources.salfetki_22 },
             {"30", Properties.Resources.salfetki_30 },
             {"40", Properties.Resources.salfetki_40 },
+            {"hover", Properties.Resources.salfetki_match}
         };
 
-        public Napkin (int player, int row, string napkin,
+        public Napkin (int row, string napkin,
             int x, int y, int width, int height)
         {
-            this.Player = player;
             this.Row = row;
             this.napkin = napkinDic[napkin];
             this.position = new Point(x, y);
@@ -52,6 +51,12 @@ namespace FruityMatch
         {
             g.DrawImage(this.napkin, this.position.X - Width / 2,
                 this.position.Y - Height / 2, this.Width, this.Height);
+        }
+
+        public bool isCollision(int x, int y)
+        {
+            double distance = Math.Sqrt((position.X - x) * (position.X - x) + (position.Y - y) * (position.Y - y));
+            return (distance <= (this.Width / 2));
         }
 
     }

@@ -10,7 +10,16 @@ namespace FruityMatch
 {
     public abstract class  Fruit
     {
-
+        public enum TYPE
+        {
+            ORANGE,
+            WATERMELON,
+            APPLE,
+            PEACH,
+            PLUM,
+            LEMON
+        }
+        public TYPE type;
         public int Width { get; set; }
         public int Height { get; set; }
         public Point position { get; set; }

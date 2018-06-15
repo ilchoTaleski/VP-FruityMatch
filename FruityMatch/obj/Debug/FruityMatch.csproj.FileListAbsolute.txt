@@ -28,3 +28,4 @@ C:\Users\PC\Downloads\Proekt\FruityMatch\obj\Debug\FruityMatch.csproj.CoreCompil
 C:\Users\PC\Downloads\Proekt\FruityMatch\bin\Debug\FruityMatch.exe.config
 C:\Users\PC\Downloads\Proekt\FruityMatch\bin\Debug\FruityMatch.exe
 C:\Users\PC\Downloads\Proekt\FruityMatch\bin\Debug\FruityMatch.pdb
+C:\Users\PC\Downloads\Proekt\FruityMatch\obj\Debug\FruityMatch.ChoosingCombinations.resources

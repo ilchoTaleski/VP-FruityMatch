@@ -11,12 +11,12 @@ namespace FruityMatch
     public class Orange:Fruit
     {
         public Image orangePicture { get; set; }
+        
         public Orange(int width, int height, int x, int y):
             base(width,height,x,y)
         {
             orangePicture = Properties.Resources.orange;
-          
-
+            type = TYPE.ORANGE;
         }
         override
         public void Draw(Graphics g)

@@ -18,7 +18,7 @@ namespace FruityMatch
 
         public override void InitializeFruits()
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 30; i++)
             {
                 fruits.AddLast(createWatermelon());
             }
@@ -29,6 +29,13 @@ namespace FruityMatch
         {
             Watermelon watermelon = createWatermelon();
             fruits.AddFirst(watermelon);
+
+        }
+        override
+        public void AddFruitLast()
+        {
+            Watermelon watermelon = createWatermelon();
+            fruits.AddLast(watermelon);
 
         }
         private Watermelon createWatermelon()

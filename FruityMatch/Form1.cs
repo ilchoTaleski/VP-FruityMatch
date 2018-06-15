@@ -12,92 +12,145 @@ namespace FruityMatch
 {
     public partial class Form1 : Form
     {
-       
-        OrangeCollection collection;
-        NapkinCollection napCollection;
-        WatermelonCollection watermelonCollection;
-        Fruit selectedFruit;
+        public Game game;
         public Form1()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            selectedFruit = null;
-            this.BackgroundImage = Properties.Resources.background_resized;
+           
+            this.BackgroundImage = Properties.Resources.interface_bg;
             this.Width = this.BackgroundImage.Width;
             this.Height = this.BackgroundImage.Height + 40;
-
-            Rectangle rec1 = new Rectangle(70, 70, 70, 70);
-            Rectangle rec2 = new Rectangle(70, 310, 70, 70);
-            napCollection = new NapkinCollection();
-            collection = new OrangeCollection(rec1);
-            watermelonCollection = new WatermelonCollection(rec2);
-            this.DoubleBuffered = true;
             
-            this.BackgroundImage = Properties.Resources.background_resized;
-            this.Width = this.BackgroundImage.Width;
-            this.Height = this.BackgroundImage.Height;
-            orange = new Orange(35, 35, 100, 100);
+            this.DoubleBuffered = true;
 
+            game = new Game();
+            ChoosingCombinations from = new ChoosingCombinations();
+            from.Show();
         }
 
        
 
         private void Form1_Resize(object sender, EventArgs e)
         {
+            
             Invalidate(true);
         }
 
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
-           // MessageBox.Show(e.X + " " + e.Y);
+            // MessageBox.Show(e.X + " " + e.Y);
+            
+            if(MouseButtons.Right == e.Button)
+            {
+                LittlePlate plate = game.getPlate(e.X, e.Y);
+                if(plate != null)
+                {
+                    if(plate.row == game.getActiveRow())
+                    {
+                        plate.fruitOn = null;
+                    }
+                    
+                }
+            }
+            if(MouseButtons.Left == e.Button)
+            {
+                Napkin napkin = game.getNapkin(e.X, e.Y);
+                if (napkin.isCollision(e.X, e.Y))
+                {
+                    String s = game.matchingCombination();
+                    if (s == null)
+                    {
+                        
+                        MessageBox.Show("decko, bidi seriozen");
+                    }
+                    else
+                    {
+                        game.incrementActiveRow();
+                        game.changeTurns();
+                        napkin.changeNapkin(s);
+                    }
+                }
+            }
+            Invalidate(true);
             
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            napCollection.Draw(e.Graphics);
-            collection.Draw(e.Graphics);
-            watermelonCollection.Draw(e.Graphics);
+            game.Draw(e.Graphics);
+            
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             if (MouseButtons.Left == e.Button)
             {
-                if (selectedFruit == null)
+                if (game.selectedFruit == null)
                 {
-                    selectedFruit = collection.fruitIfHit(e.X, e.Y);
+                    game.selectedFruit = game.doc.fruitIfHit(e.X, e.Y);
                     
                 }
-                if (selectedFruit != null)
-                    selectedFruit.MoveTo(e.X, e.Y);
+                if (game.selectedFruit != null)
+                    game.selectedFruit.MoveTo(e.X, e.Y);
             }
             else
             {
-                if (selectedFruit != null)
+                /*if (game.selectedFruit != null)
                 {
-                    collection.fruits.Remove(selectedFruit);
+                    FruitCollection fCol = game.doc.getFruitCollection(game.selectedFruit.type);
+                    fCol.AddFruitLast();
+                    fCol.fruits.Remove(game.selectedFruit);
                 }
-                
-                selectedFruit = null;
+
+                game.selectedFruit = null;*/
+            }
+            Napkin napkin = game.getNapkin(e.X, e.Y);
+            if(napkin != null)
+            {
+             //   MessageBox.Show("hehey");
+                if(napkin.isCollision(e.X, e.Y) ){
+                    napkin.changeNapkin("hover");
+                } else
+                {
+                    napkin.changeNapkin("00");
+                }
             }
             Invalidate(true);
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (selectedFruit != null)
+            if (game.selectedFruit != null)
             {
-                collection.AddFruitFirst();
-                collection.fruits.Remove(selectedFruit);
+                LittlePlate plate = game.getPlate(e.X, e.Y);
+                if (plate != null)
+                {
+                    game.selectedFruit.MoveTo(plate.position.X, plate.position.Y);
+                    plate.fruitOn = game.selectedFruit;
+                }
+
+                FruitCollection fCol = game.doc.getFruitCollection(game.selectedFruit.type);
+                fCol.AddFruitLast();
+                fCol.fruits.Remove(game.selectedFruit);
             }
 
-            selectedFruit = null;
+            game.selectedFruit = null;
             Invalidate(true);
-            orange.Draw(e.Graphics);
+   
+        }
+
+        private void Form1_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_MouseEnter(object sender, EventArgs e)
+        {
+
         }
     }
 }

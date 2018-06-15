@@ -11,6 +11,12 @@ namespace FruityMatch
     {
         public LinkedList<Fruit> fruits { get; set; }
         public Rectangle rectangle { get; set; }
+        public enum type
+        {
+            ORANGE,
+            WATERMELON,
+
+        }
         public FruitCollection (Rectangle rectangle)
         {
             fruits = new LinkedList<Fruit>();
@@ -38,6 +44,7 @@ namespace FruityMatch
         }
 
         public abstract void AddFruitFirst();
+        public abstract void AddFruitLast();
 
     }
 }

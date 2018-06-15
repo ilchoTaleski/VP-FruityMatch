@@ -196,4 +196,16 @@
   <data name="watermelon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\watermelon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="choose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choose.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="interface_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\interface.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plate_combination" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plate-combination.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salfetki_match" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salfetki-match.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

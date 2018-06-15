@@ -10,15 +10,17 @@ namespace FruityMatch
     public class Apple : Fruit
     {
         public Image applePicture { get; set; }
+
         public Apple(int width, int height, int x, int y) :
             base(width, height, x, y)
         {
+            type = TYPE.APPLE;
             this.applePicture = Properties.Resources.apple;
         }
         override
         public void Draw(Graphics g)
         {
-            g.DrawImage(applePicture, this.position.X, this.position.Y, this.Width, this.Height);
+            g.DrawImage(applePicture, this.position.X - (Width/2), this.position.Y - (Height/2), this.Width, this.Height);
         }
     }
 }

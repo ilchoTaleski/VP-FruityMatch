@@ -19,7 +19,7 @@ namespace FruityMatch
 
         public override void InitializeFruits()
         {
-            for (int i = 0; i<25; i++)
+            for (int i = 0; i<30; i++)
             {
                 fruits.AddLast(createOrange());
             }
@@ -31,6 +31,13 @@ namespace FruityMatch
             Orange orange = createOrange();
             fruits.AddFirst(orange);
             
+        }
+        override
+        public void AddFruitLast()
+        {
+            Orange orange = createOrange();
+            fruits.AddLast(orange);
+
         }
         private Orange createOrange()
         {
