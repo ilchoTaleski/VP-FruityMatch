@@ -123,6 +123,16 @@ namespace FruityMatch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_play {
+            get {
+                object obj = ResourceManager.GetObject("image_play", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap interface_bg {
             get {
                 object obj = ResourceManager.GetObject("interface_bg", resourceCulture);

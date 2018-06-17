@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppleCollection.cs" />
+    <Compile Include="AutomaticGame.cs" />
     <Compile Include="ChoosingCombinations.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +294,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\choose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_play.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

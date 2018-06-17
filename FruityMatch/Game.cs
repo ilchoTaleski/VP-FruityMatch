@@ -13,7 +13,7 @@ namespace FruityMatch
         public FruitsDocument doc { get; set; }
         public Player player1 { get; set; }
         public Player player2 { get; set; }
-        public Game()
+        public Game(List<Fruit> player1, List<Fruit> player2)
         {
             doc = new FruitsDocument();
             List<Fruit> fruits = new List<Fruit>();
@@ -23,8 +23,15 @@ namespace FruityMatch
             fruits.Add(new Watermelon(5, 5, 5, 5));
             selectedFruit = null;
 
-            player1 = new Player(true, 0, fruits);
-            player2 = new Player(false, 1, fruits);
+            this.player1 = new Player(true, 0, player1);
+            this.player2 = new Player(false, 1, player2);
+            //this.player2.isComputer = true;
+        }
+
+        public Player getActivePlayer()
+        {
+            if (player1.turn) return player1;
+            return player2;
         }
 
         public void Draw(Graphics g)
@@ -33,85 +40,49 @@ namespace FruityMatch
             player2.Draw(g);
             doc.Draw(g);
         }
+
         public void changeTurns()
         {
             player1.turn = !player1.turn;
             player2.turn = !player2.turn;
         }
+
         public LittlePlate getPlate(int x, int y)
         {
-            if (player1.turn)
-            {
-                return player1.getPlate(x, y);
-            }
-            return player2.getPlate(x, y);
+            return getActivePlayer().getPlate(x, y);
         }
+
         public int getActiveRow()
         {
-            if(player1.turn)
-            {
-                return player1.littlePlates.activeRow;
-            }
-            return player2.littlePlates.activeRow;
+            return getActivePlayer().littlePlates.activeRow;
         }
+
         public void incrementActiveRow()
         {
-            if (player1.turn)
-            {
-                player1.incrementActiveRow();
-                changeCanBeDrawn();
-            }
-            else if(player2.turn)
-            {
-                player2.incrementActiveRow();
-                changeCanBeDrawn();
-            }
+            getActivePlayer().incrementActiveRow();
+            changeCanBeDrawn();
         }
+
         public Napkin getNapkin(int x, int y)
         {
-            if (player1.turn)
-            {
-                return player1.napkins.getNapkinCollision(x, y, player1.littlePlates.activeRow);
-            }
-            return player2.napkins.getNapkinCollision(x, y, player2.littlePlates.activeRow);
+            return getActivePlayer().napkins.getNapkinCollision(x, y, getActivePlayer().littlePlates.activeRow);
         }
 
         public String matchingCombination()
         {
-            
-            if (player1.turn)
+            if (!getActivePlayer().littlePlates.checkAllMatch())
             {
-                if (!player1.littlePlates.checkAllMatch())
-                {
-                    return null;
-                }
-                else
-                {
-                    return player1.littlePlates.Match(player1.combination);
-                }
+                return null;
             }
             else
             {
-                if (!player2.littlePlates.checkAllMatch())
-                {
-                    return null;
-                }
-                else
-                {
-                    return player2.littlePlates.Match(player2.combination);
-                }
+                return getActivePlayer().littlePlates.Match(getActivePlayer().combination);
             }
-            
         }
+
         public void changeCanBeDrawn()
         {
-            if (player1.turn) {
-                player1.changeCanBeDrawn();
-
-            }else
-            {
-                player2.changeCanBeDrawn();
-            }
+            getActivePlayer().changeCanBeDrawn();
         }
     }
 }
